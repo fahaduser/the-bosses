@@ -1,0 +1,186 @@
+# Copyright (C) 2016 event-term-custom-post
+# This file is distributed under the same license as the event-term-custom-post package.
+msgid ""
+msgstr ""
+"Project-Id-Version: event-term-custom-post\n"
+"Report-Msgid-Bugs-To: http://codexcoder.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: CodexCoder <codxcoders@gmail.com>\n"
+"Language-Team: CodexCoder <codxcoders@gmail.com>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+
+#: post-type.php:51, post-type.php:53, post-type.php:73
+msgid "Testimonials"
+msgstr ""
+
+#: post-type.php:55, post-type.php:163, post-type.php:273, post-type.php:383
+msgid "Add New"
+msgstr ""
+
+#: post-type.php:57
+msgid "Add New Testimonial"
+msgstr ""
+
+#: post-type.php:59
+msgid "Edit Testimonial"
+msgstr ""
+
+#: post-type.php:61
+msgid "New Testimonial"
+msgstr ""
+
+#: post-type.php:63
+msgid "View Testimonial"
+msgstr ""
+
+#: post-type.php:65
+msgid "Search Testimonial"
+msgstr ""
+
+#: post-type.php:67
+msgid "No testimonial found"
+msgstr ""
+
+#: post-type.php:69
+msgid "No testimonial found in trash"
+msgstr ""
+
+#: post-type.php:159, post-type.php:161, post-type.php:181
+msgid "Speakers"
+msgstr ""
+
+#: post-type.php:165
+msgid "Add New Speakers"
+msgstr ""
+
+#: post-type.php:167
+msgid "Edit Speakers"
+msgstr ""
+
+#: post-type.php:169
+msgid "New Speakers"
+msgstr ""
+
+#: post-type.php:171
+msgid "View Speakers"
+msgstr ""
+
+#: post-type.php:173
+msgid "Search Speakers"
+msgstr ""
+
+#: post-type.php:175
+msgid "No speakers found"
+msgstr ""
+
+#: post-type.php:177
+msgid "No Speakers found in trash"
+msgstr ""
+
+#: post-type.php:269, post-type.php:291
+msgid "Pricing Table"
+msgstr ""
+
+#: post-type.php:271
+msgid "Pricing Tables"
+msgstr ""
+
+#: post-type.php:275
+msgid "Add New Pricing Table"
+msgstr ""
+
+#: post-type.php:277
+msgid "Edit Pricing Table"
+msgstr ""
+
+#: post-type.php:279
+msgid "New Pricing Table"
+msgstr ""
+
+#: post-type.php:281
+msgid "View Pricing Table"
+msgstr ""
+
+#: post-type.php:283
+msgid "Search Pricing Table"
+msgstr ""
+
+#: post-type.php:285
+msgid "No pricing table found"
+msgstr ""
+
+#: post-type.php:287
+msgid "No pricing table found in trash"
+msgstr ""
+
+#: post-type.php:379, post-type.php:381, post-type.php:401
+msgid "Sponsors"
+msgstr ""
+
+#: post-type.php:385
+msgid "Add New Sponsor"
+msgstr ""
+
+#: post-type.php:387
+msgid "Edit Sponsor"
+msgstr ""
+
+#: post-type.php:389
+msgid "New Sponsor"
+msgstr ""
+
+#: post-type.php:391
+msgid "View Sponsor"
+msgstr ""
+
+#: post-type.php:393
+msgid "Search Sponsor"
+msgstr ""
+
+#: post-type.php:395
+msgid "No sponsor found"
+msgstr ""
+
+#: post-type.php:397
+msgid "No sponsor found in trash"
+msgstr ""
+
+#: post-type.php:461, post-type.php:465, post-type.php:479
+msgid "Sponsor Categories"
+msgstr ""
+
+#: post-type.php:463
+msgid "Sponsor Category"
+msgstr ""
+
+#: post-type.php:467
+msgid "Parent Sponsor Category"
+msgstr ""
+
+#: post-type.php:469
+msgid "Parent Sponsor Category:"
+msgstr ""
+
+#: post-type.php:471
+msgid "Edit Category"
+msgstr ""
+
+#: post-type.php:473
+msgid "Update Category"
+msgstr ""
+
+#: post-type.php:475
+msgid "Add New Sponsor Category"
+msgstr ""
+
+#: post-type.php:477
+msgid "New Sponsor Name"
+msgstr ""

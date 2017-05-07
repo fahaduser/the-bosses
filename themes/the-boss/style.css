@@ -1,0 +1,115 @@
+/*
+Theme Name: The Boss
+Theme URI: http://underscores.me/
+Author: CodexCoder
+Author URI: https://www.codexcoder.com/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: the-boss
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+The Boss is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+.header-top .logo a {
+	color: #337ab7;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+}
+.header-top .logo a:hover {
+	text-decoration: none;
+}
+.row .blog-pagination {
+	text-align: left;
+}
+.comment-content .comment_meta {
+	overflow: hidden;
+}
+.reply-btn a.comment-reply-link:after {
+	content    : " \f122";
+	font-family: FontAwesome;
+}
+.comment-list .comment-content {
+	display: inherit;
+}
+
+.comment-list .comment-content .user-name {
+	overflow: hidden;
+	margin-left: 20px;
+}
+
+.comment-list .comment-content p {
+	overflow: hidden;
+	padding-left: 20px;
+	margin-top: 5px;
+}
+/**********************   the boss widgets custom style  *************************/
+
+.widget_tb_recent_news .latest-news .small-thumbnail img {
+	width: 70px;
+	height: 70px;
+}
+.widget_tb_recent_news .latest-news .content .post-date {
+	display: block;
+}
+.col-md-9 .blog-style-two .search-page {
+	margin-bottom: 0;
+}
+.archive-description {
+	margin: 5px 0;
+}
+body.logged-in.down #sohag.clone{
+	top: 30px;
+}
+.project-cat {
+	display: block;
+}
+
+/**  Slider Overlay**/
+
+.clean-overlay-1{
+	position: relative;
+}
+.clean-overlay-2{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+}
