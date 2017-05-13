@@ -2,7 +2,7 @@
 
 function the_boss_service_2( $title, $subtitle, $limit, $order ,$orderby , $section_bg, $btn_text,$btn_url ,$tb_class ){ ?>
 
-		<section class="offer-section offer-section-two section" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?> >
+		<section class="offer-section offer-section-two section <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?> >
 			<div class="container">
 				<div class="row">
 					<div class="section-heading">
@@ -27,7 +27,7 @@ function the_boss_service_2( $title, $subtitle, $limit, $order ,$orderby , $sect
 						?>
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="single-offer-item row">
-								<div class="offer-icon">
+								<div class="offer-icon offer-2">
 									<div class="offer-icon-animate">
 										<img src="<?php echo esc_url( $service_image[0] ); ?>" alt="" />
 									</div>

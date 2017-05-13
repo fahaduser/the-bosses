@@ -2,12 +2,12 @@
 
 function the_boss_service_3( $title, $subtitle, $limit, $order ,$orderby , $section_bg, $btn_text,$btn_url ,$tb_class ){ ?>
 
-		<section class="offer-section offer-section-three section service-page-three-offer">
+		<section class="offer-section offer-section-three section service-page-three-offer <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?> >
 			<div class="container">
 				<div class="row">
 					<div class="section-heading">
-						<h2 class="section-title">What We Offer</h2>
-						<p class="section-content">Globally leverage other's clientfocused growth strategies through pandemic and an users. embrace corporate technologies for unique testing</p>
+						<h2 class="section-title"><?php echo esc_html( $title ); ?></h2>
+						<p class="section-content"><?php echo esc_html( $subtitle ); ?></p>
 					</div>
 				</div>
 				<div class="row">
@@ -29,7 +29,7 @@ function the_boss_service_3( $title, $subtitle, $limit, $order ,$orderby , $sect
 							<div class="single-offer-item row">
 								<div class="offer-icon">
 									<div class="offer-icon-animate">
-										<img src="<?php echo esc_url( $service_image[0] ); ?>" alt="" />
+										<?php the_post_thumbnail( 'the-boss-offer' ); ?>
 									</div>
 								</div>
 								<div class="offer-details">

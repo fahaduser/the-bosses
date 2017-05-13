@@ -36,7 +36,7 @@ endif;
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-		<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ; ?>/images/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ; ?>/images/favicon.ico" />
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         

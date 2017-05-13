@@ -127,7 +127,47 @@ function the_boss_related_post($postid){
  *  The boss Testimonial
  */
 
-function the_boss_testimonial(){
+function the_boss_testimonial(){ ?>
 
-	
-}
+		<div class="single-sidebar">
+			<h3><?php echo esc_html__( 'Our Testimonals', 'the-boss' ); ?></h3>
+			<div class="testimonial-parents-sidebar">
+				<div class="swiper-wrapper">
+
+				<?php 
+				$tb_testimonial = new WP_Query(array(
+					'post_type'		=> 'tb_testimonial'
+					));
+				while($tb_testimonial -> have_posts()) : $tb_testimonial -> the_post() ; 
+				$testimonial_data = get_post_meta( get_the_ID(),'_tb_testimonial_options', true );
+				$testimonial_desc = isset($testimonial_data['testimonial_desc']) ? $testimonial_data['testimonial_desc'] : '';
+				$testimonial_subtitle = isset($testimonial_data['testimonial_subtitle']) ? $testimonial_data['testimonial_subtitle'] : '';
+				?>
+					<div class="swiper-slide">						
+						<div class="testimonial-box">
+							<div class="single-testimonial">
+								<div class="testimonial-content">
+									<div class="testimonial-inner">
+										<p><?php echo wp_kses_post( $testimonial_desc ); ?></p>
+									</div>								
+								</div>
+							</div>
+							<div class="testimonial-author">
+								<div class="testimonial-author-pic">
+									<?php the_post_thumbnail( 'the-boss-testimonial-recentphoto' ); ?>
+								</div>
+								<div class="testimonial-author-info">
+									<?php the_title( '<h3>','</h3>' ); ?>
+									<span><?php echo esc_html( $testimonial_subtitle ); ?></span>
+								</div>
+							</div>							
+						</div>
+					</div>
+
+					<?php endwhile; wp_reset_postdata(); ?>
+
+
+				</div>
+			</div>								
+		</div>
+<?php }

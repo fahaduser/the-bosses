@@ -1525,7 +1525,6 @@ body.down #sohag.clone  img{
 13. Newsletter Section
 ==================================*/
 .newletter-section {
-    background: #62A0D1;
     padding: 55px 0;
 	overflow: hidden;
 }
@@ -3553,7 +3552,9 @@ Footer Section - Footer Bottom
     text-align: center;
     overflow: hidden;
 }
-.single-contact-info {}
+.single-contact-info {
+    margin-bottom: 5px;
+}
 .single-contact-info span {
     width: 70px;
     height: 70px;

@@ -6,7 +6,10 @@
  *
  * @package The_Boss
  */
-$projects_data 		= '';
+$services_data 		= '';
+$service_desc 		= '';
+$service_download 		= '';
+$service_question_answer 		= '';
 
 if(function_exists('cs_get_option')) :
 	$services_data 				= get_post_meta( get_the_ID() , '_tb_service_options', true );
@@ -95,35 +98,9 @@ endif;
 
 							
 							</div>
-							<div class="single-sidebar">
-								<h3>Our Testimonals</h3>
-								<div class="testimonial-parents-sidebar">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">						
-											<div class="testimonial-box">
-												<div class="single-testimonial">
-													<div class="testimonial-content">
-														<div class="testimonial-inner">
-															<p>Contnualy garow arnative and
-															resource sucking and services. Asservely syndicate fully theme
-															researched opportunities.</p>
-														</div>								
-													</div>
-												</div>
-												<div class="testimonial-author">
-													<div class="testimonial-author-pic">
-														<img src="images/testimonial-author-one.jpg" alt="" />
-													</div>
-													<div class="testimonial-author-info">
-														<h3>Robot Smith</h3>
-														<span>Designer</span>
-													</div>
-												</div>							
-											</div>
-										</div>
-									</div>
-								</div>								
-							</div>
+
+							<?php the_boss_testimonial(); ?>
+							
 						</div>
 					</div>
 				</div>

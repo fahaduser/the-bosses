@@ -32,7 +32,7 @@ function the_boss_scripts() {
     wp_enqueue_style( 'responsive', THE_BOSS . '/css/responsive.css', false, '1.0.0', 'all' );
 
     // The Boss JS Enqueue
-    wp_enqueue_script( 'modernizr', THE_BOSS . '/js/vendor/modernizr.min.js', array( 'jquery' ), '2.8.3', false );
+    wp_enqueue_script( 'modernizr', THE_BOSS . '/js/vendor/modernizr-2.8.3.min.js', array( 'jquery' ), '2.8.3', false );
     wp_enqueue_script( 'bootstrap', THE_BOSS . '/js/bootstrap.min.js', array( 'jquery' ), '3.3.7', true );
     wp_enqueue_script( 'simpleparallax', THE_BOSS . '/js/simpleparallax.js', array( 'jquery' ), '1.0.0', true );
     wp_enqueue_script( 'jquery-easing', THE_BOSS . '/js/jquery.easing.min.js', array( 'jquery' ), '1.3.0', true );

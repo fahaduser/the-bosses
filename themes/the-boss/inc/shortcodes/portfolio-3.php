@@ -1,7 +1,7 @@
 <?php 
 
 function the_boss_portfolio_3( $title, $subtitle, $limit, $order ,$orderby , $section_bg, $btn_text,$btn_url ,$tb_class ){ ?>
-	<div class="section portfolio-page-three" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?>>
+	<div class="section portfolio-page-three <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?>>
 		<div class="row">
 			<div class="section-heading">
 				<h2 class="section-title"><?php echo wp_kses_post( $title ); ?></h2>

@@ -305,6 +305,188 @@ if(!class_exists('The_Boss_Service_Post_Type')) :
 
 endif;
 
+// The Boss Testimonial
+
+if(!class_exists('The_Boss_Testimonial_Post_Type')) :
+
+    class The_Boss_Testimonial_Post_Type {
+
+        public static $post_type        = 'tb_testimonial';
+        public static $menu_position    = 5;
+        public static $text_domain      = 'the-boss-custom-post';
+
+        public static function register(){
+
+        $labels = array(
+        'name'               => esc_html__( 'Testimonials',  self::$text_domain ),
+        'singular_name'      => esc_html__( 'Testimonial', self::$text_domain  ),
+        'menu_name'          => esc_html__( 'Testimonials',  self::$text_domain  ),
+        'name_admin_bar'     => esc_html__( 'Testimonial', self::$text_domain  ),
+        'add_new'            => esc_html__( 'Add New',  self::$text_domain  ),
+        'add_new_item'       => esc_html__( 'Testimonial Title', self::$text_domain  ),
+        'new_item'           => esc_html__( 'New Testimonial', self::$text_domain  ),
+        'edit_item'          => esc_html__( 'Edit Testimonial', self::$text_domain  ),
+        'view_item'          => esc_html__( 'View Testimonial', self::$text_domain  ),
+        'all_items'          => esc_html__( 'All Testimonials', self::$text_domain  ),
+        'search_items'       => esc_html__( 'Search Testimonials', self::$text_domain  ),
+        'parent_item_colon'  => esc_html__( 'Parent Testimonials:', self::$text_domain  ),
+        'featured_image'     => esc_html__( 'Testimonial Image', self::$text_domain  ),
+        'set_featured_image' => esc_html__( 'Set Testimonial Image', self::$text_domain  ),
+        'remove_featured_image'=> esc_html__( 'Remove Testimonial Image', self::$text_domain  ),
+        'not_found'          => esc_html__( 'No Testimonial found.', self::$text_domain  ),
+        'not_found_in_trash' => esc_html__( 'No Testimonial found in Trash.', self::$text_domain  )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => self::$post_type ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => self::$menu_position ,
+        'supports'           => array('thumbnail', 'title'),
+        'menu_icon'          => 'dashicons-format-quote',
+
+    );
+
+    $args = apply_filters('presscore_post_type_'. self::$post_type. '_args', $args );
+
+    register_post_type( self::$post_type, $args );
+
+    flush_rewrite_rules();
+
+
+        }
+    }
+
+endif;
+
+
+// The Boss Team Member 
+
+if(!class_exists('The_Boss_Team_Post_Type')) :
+
+    class The_Boss_Team_Post_Type {
+
+        public static $post_type        = 'tb_team';
+        public static $menu_position    = 5;
+        public static $text_domain      = 'the-boss-custom-post';
+
+        public static function register(){
+
+        $labels = array(
+        'name'               => esc_html__( 'Team Members',  self::$text_domain ),
+        'singular_name'      => esc_html__( 'Team Member', self::$text_domain  ),
+        'menu_name'          => esc_html__( 'Team Members',  self::$text_domain  ),
+        'name_admin_bar'     => esc_html__( 'Team Member', self::$text_domain  ),
+        'add_new'            => esc_html__( 'Add New Member',  self::$text_domain  ),
+        'add_new_item'       => esc_html__( 'Member Title', self::$text_domain  ),
+        'new_item'           => esc_html__( 'New Team Member', self::$text_domain  ),
+        'edit_item'          => esc_html__( 'Edit Team Member', self::$text_domain  ),
+        'view_item'          => esc_html__( 'View Team Member', self::$text_domain  ),
+        'all_items'          => esc_html__( 'All Team Members', self::$text_domain  ),
+        'search_items'       => esc_html__( 'Search Team Members', self::$text_domain  ),
+        'parent_item_colon'  => esc_html__( 'Parent Team Members:', self::$text_domain  ),
+        'featured_image'     => esc_html__( 'Team Member Image', self::$text_domain  ),
+        'set_featured_image' => esc_html__( 'Set Team Member Image', self::$text_domain  ),
+        'remove_featured_image'=> esc_html__( 'Remove Team Member Image', self::$text_domain  ),
+        'not_found'          => esc_html__( 'No Team Member found.', self::$text_domain  ),
+        'not_found_in_trash' => esc_html__( 'No Team Member found in Trash.', self::$text_domain  )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => self::$post_type ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => self::$menu_position ,
+        'supports'           => array('thumbnail', 'title'),
+        'menu_icon'          => 'dashicons-groups',
+
+    );
+
+    $args = apply_filters('presscore_post_type_'. self::$post_type. '_args', $args );
+
+    register_post_type( self::$post_type, $args );
+
+    flush_rewrite_rules();
+
+
+        }
+    }
+
+endif;
+
+
+// The Boss Pricing Table
+
+if(!class_exists('The_Boss_Pricing_Table')) :
+
+    class The_Boss_Pricing_Table {
+
+        public static $post_type        = 'tb_pricing';
+        public static $menu_position    = 5;
+        public static $text_domain      = 'the-boss-custom-post';
+
+        public static function register(){
+
+        $labels = array(
+        'name'               => esc_html__( 'Pricing Tables',  self::$text_domain ),
+        'singular_name'      => esc_html__( 'Pricing Table', self::$text_domain  ),
+        'menu_name'          => esc_html__( 'Pricing Tables',  self::$text_domain  ),
+        'name_admin_bar'     => esc_html__( 'Pricing Table', self::$text_domain  ),
+        'add_new'            => esc_html__( 'Add New Table',  self::$text_domain  ),
+        'add_new_item'       => esc_html__( 'Package Title', self::$text_domain  ),
+        'new_item'           => esc_html__( 'New Pricing Table', self::$text_domain  ),
+        'edit_item'          => esc_html__( 'Edit Pricing Table', self::$text_domain  ),
+        'view_item'          => esc_html__( 'View Pricing Table', self::$text_domain  ),
+        'all_items'          => esc_html__( 'All Pricing Tables', self::$text_domain  ),
+        'search_items'       => esc_html__( 'Search Pricing Tables', self::$text_domain  ),
+        'parent_item_colon'  => esc_html__( 'Parent Pricing Tables:', self::$text_domain  ),
+        'not_found'          => esc_html__( 'No Pricing Table found.', self::$text_domain  ),
+        'not_found_in_trash' => esc_html__( 'No Pricing Table found in Trash.', self::$text_domain  )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => self::$post_type ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => self::$menu_position ,
+        'supports'           => array( 'title'),
+        'menu_icon'          => 'dashicons-plus-alt',
+
+    );
+
+    $args = apply_filters('presscore_post_type_'. self::$post_type. '_args', $args );
+
+    register_post_type( self::$post_type, $args );
+
+    flush_rewrite_rules();
+
+
+        }
+    }
+
+endif;
+
 
 /**
  * The Boss Post Type Register
@@ -316,7 +498,10 @@ if(!function_exists('the_boss_custom_post_type')) :
         The_Boss_Home_Slider_Post_Type::register();
         The_Boss_Portfolio_Post_Type::register();
         The_Boss_Projects_Post_Type::register();
-		The_Boss_Service_Post_Type::register();
+        The_Boss_Service_Post_Type::register();
+        The_Boss_Testimonial_Post_Type::register();
+        The_Boss_Team_Post_Type::register();
+		The_Boss_Pricing_Table::register();
 	}
 endif;
 

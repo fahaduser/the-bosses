@@ -4,7 +4,7 @@ function the_boss_counter( $counter_image, $the_boss_counter, $tb_class ){
 		$counter_image = wp_get_attachment_url( $counter_image );
 	?>
 <?php if($the_boss_counter) : ?>
-<section class="counter-section parallax" data-dir="down" id="counter-section" <?php if( $counter_image ) : ?> style="background-image: url( <?php echo esc_url( $counter_image ); ?>);" <?php endif; ?> >
+<section class="counter-section parallax <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>" data-dir="down" id="counter-section" <?php if( $counter_image ) : ?> style="background-image: url( <?php echo esc_url( $counter_image ); ?>);" <?php endif; ?> >
 			<div class="parallax-window">
 				<div class="overlay">
 					<div class="container">

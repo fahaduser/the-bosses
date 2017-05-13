@@ -1156,7 +1156,19 @@ body.down #sohag.clone {
 #map_canvas {
     height: 238px;
 }
-	
+.widget_wysija_cont .widget_wysija input[type="text"] {
+   display: block;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    float: none;
+}
+.widget_wysija_cont .widget_wysija input[type="submit"] {
+    margin: auto;
+    float: none;
+    margin-top: 20px;
+}
+
 }
 
 

@@ -1,7 +1,7 @@
 <?php 
 
 function the_boss_portfolio_1( $title, $subtitle, $limit, $order ,$orderby , $section_bg, $btn_text,$btn_url ,$tb_class ){ ?>
-<section class="portfolio-section section" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?>>
+<section class="portfolio-section section <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?>>
 	<div class="container">
 		<div class="row">
 			<div class="section-heading">

@@ -24,5 +24,15 @@ function the_boss_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+	register_sidebar( array(
+		'name'          => esc_html__( 'Newsletter', 'the-boss' ),
+		'id'            => 'newsletter-widgets',
+		'description'   => esc_html__( 'Add widgets here.', 'the-boss' ),
+		'before_widget' => '<div class="newsletter-section-box %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'the_boss_widgets_init' );

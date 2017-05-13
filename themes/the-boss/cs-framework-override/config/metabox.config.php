@@ -235,4 +235,212 @@ $options[]    = array(
 );
 
 
+
+// -----------------------------------------
+//The Boss Testimonial                   -
+// -----------------------------------------
+$options[]    = array(
+  'id'        => '_tb_testimonial_options',
+  'title'     => 'Testimonial Information',
+  'post_type' => 'tb_testimonial',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
+
+    array(
+      'name'   => 'tb_testimonial_info',
+      'fields' => array(
+        array(
+            'id'        => 'testimonial_subtitle',
+            'type'      => 'text',
+            'title'     => esc_html__('Testimonial Subtitle :', 'the-boss'),
+        ),
+        array(
+            'id'        => 'testimonial_desc',
+            'type'      => 'textarea',
+            'title'     => esc_html__('Testimonial Description :', 'the-boss'),
+        ),
+      ),
+    ),
+  ),
+);
+
+
+
+// -----------------------------------------
+//The Boss Team Member                   -
+// -----------------------------------------
+
+$options[]    = array(
+  'id'        => '_tb_team_options',
+  'title'     => 'Member Information',
+  'post_type' => 'tb_team',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
+
+    array(
+      'name'   => 'tb_member_info',
+      'fields' => array(
+        array(
+            'id'        => 'member_designation',
+            'type'      => 'text',
+            'title'     => esc_html__('Member Designation :', 'the-boss'),
+        ),
+        array(
+            'id'        => 'member_desc',
+            'type'      => 'wysiwyg',
+            'title'     => esc_html__('Member Description :', 'the-boss'),
+        ),
+        array(
+          'id'              => 'member_social',
+          'type'            => 'group',
+          'title'           => esc_html__('Member Social Profile :', 'the-boss'),
+          'button_title'    => esc_html__('Add New Social Profile', 'the-boss'),
+          'accordion_title' => esc_html__('Add New Social ', 'the-boss'),
+          'fields'          => array(
+                array(
+                  'id'    => 'social_icon',
+                  'type'  => 'icon',
+                  'title' => esc_html__('Social Icon', 'the-boss'),
+                ),
+                array(
+                  'id'    => 'social_url',
+                  'type'  => 'text',
+                  'title' => esc_html__('Social Url', 'the-boss'),
+                ),
+              ),
+         
+        ),
+        array(
+          'id'              => 'member_contact',
+          'type'            => 'group',
+          'title'           => esc_html__('Member Contact Info :', 'the-boss'),
+          'button_title'    => esc_html__('Add New Contact Info', 'the-boss'),
+          'accordion_title' => esc_html__('Add New Contact Info ', 'the-boss'),
+          'fields'          => array(
+                array(
+                  'id'    => 'contact_icon',
+                  'type'  => 'icon',
+                  'title' => esc_html__('Contact Icon', 'the-boss'),
+                ),
+                array(
+                  'id'    => 'contact_info',
+                  'type'  => 'textarea',
+                  'title' => esc_html__('Contact Information', 'the-boss'),
+                ),
+              ),
+        ),
+        array(
+            'id'        => 'member_statement',
+            'type'      => 'wysiwyg',
+            'title'     => esc_html__('Member Statement :', 'the-boss'),
+        ),
+        array(
+          'id'              => 'member_skills',
+          'type'            => 'group',
+          'title'           => esc_html__('Member Skills :', 'the-boss'),
+          'button_title'    => esc_html__('Add New Skill', 'the-boss'),
+          'accordion_title' => esc_html__('Add New Skill ', 'the-boss'),
+          'fields'          => array(
+                array(
+                  'id'    => 'skill_name',
+                  'type'  => 'text',
+                  'title' => esc_html__('Skill Name ', 'the-boss'),
+                ),
+                array(
+                  'id'    => 'skill_percent',
+                  'type'  => 'text',
+                  'title' => esc_html__('Skill Percentage ', 'the-boss'),
+                ),
+              ),
+        ),
+        array(
+          'id'              => 'member_award',
+          'type'            => 'group',
+          'title'           => esc_html__('Member Award ', 'the-boss'),
+          'button_title'    => esc_html__('Add New Award', 'the-boss'),
+          'accordion_title' => esc_html__('Add New Award ', 'the-boss'),
+          'fields'          => array(
+                array(
+                  'id'    => 'award_name',
+                  'type'  => 'text',
+                  'title' => esc_html__('Award Name ', 'the-boss'),
+                ),
+                array(
+                  'id'    => 'award_image',
+                  'type'  => 'image',
+                  'title' => esc_html__('Award Image ', 'the-boss'),
+                ),
+              ),
+        ),
+      ),
+    ),
+  ),
+);
+
+
+
+// -----------------------------------------
+//The Boss Pricing Table                   -
+// -----------------------------------------
+
+$options[]    = array(
+  'id'        => '_tb_pricing_options',
+  'title'     => 'Pricing Table Information',
+  'post_type' => 'tb_pricing',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
+
+    array(
+      'name'   => 'tb_pricing_info',
+      'fields' => array(
+        array(
+            'id'        => 'package_price',
+            'type'      => 'text',
+            'title'     => esc_html__('Package Price :', 'the-boss'),
+        ),
+        array(
+            'id'        => 'package_duration',
+            'type'      => 'text',
+            'title'     => esc_html__('Package Duration :', 'the-boss'),
+        ),
+        array(
+          'id'              => 'package_service',
+          'type'            => 'group',
+          'title'           => esc_html__('Package Service :', 'the-boss'),
+          'button_title'    => esc_html__('Add New Service', 'the-boss'),
+          'accordion_title' => esc_html__('Add New Service ', 'the-boss'),
+          'fields'          => array(
+                array(
+                  'id'    => 'service_icon',
+                  'type'  => 'icon',
+                  'title' => esc_html__('Service Icon', 'the-boss'),
+                ),
+                array(
+                  'id'    => 'service_text',
+                  'type'  => 'text',
+                  'title' => esc_html__('Service Name', 'the-boss'),
+                ),
+              ),
+         
+        ),
+        array(
+            'id'        => 'package_btn',
+            'type'      => 'text',
+            'title'     => esc_html__('Button Text :', 'the-boss'),
+        ),
+        array(
+            'id'        => 'package_url',
+            'type'      => 'text',
+            'title'     => esc_html__('Button Url :', 'the-boss'),
+        ),
+
+      ),
+    ),
+  ),
+);
+
+
 CSFramework_Metabox::instance( $options );

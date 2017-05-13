@@ -2,12 +2,12 @@
 
 function the_boss_service_1( $title, $subtitle, $limit, $order ,$orderby , $section_bg, $btn_text,$btn_url ,$tb_class ){ ?>
 
-<section class="offer-section section" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?> >
+<section class="offer-section section <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>" <?php if($section_bg) : ?>style="background:<?php echo esc_attr($section_bg ); ?>" <?php endif; ?> >
 			<div class="container">
 				<div class="row">
 					<div class="section-heading">
 						<h2 class="section-title"><?php echo esc_html( $title ); ?></h2>
-						<p class="section-content"><?php echo esc_html( $subtitle ); ?></p>
+						<p class="section-content"><?php echo wp_kses_post( $subtitle ); ?></p>
 					</div>
 				</div>
 				<div class="row">

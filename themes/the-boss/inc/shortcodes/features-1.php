@@ -1,7 +1,7 @@
 <?php 
 
 function the_boss_features($the_boss_feature, $tb_class){ ?>
-	<section class="feature-section section <?php echo esc_attr( $tb_class ); ?>">
+	<section class="feature-section section <?php echo (!empty( $tb_class )) ? esc_attr( $tb_class ) : ''; ?>">
 		<div class="container">
 			<div class="row">
 				<?php foreach( $the_boss_feature as $single_data ) : 
