@@ -5,7 +5,7 @@ class Widget_Testimonials extends The_Boss_Widget{
 	public function __construct(){
 		parent::__construct(
             'tb_testimonials',
-            esc_html__('The Boss :: Testimonial News', 'the-boss'),
+            esc_html__('The Boss :: Testimonial', 'the-boss'),
             array('description' => esc_html('Testimonial widget to display your Testimonials.' ) )
         );
 	}

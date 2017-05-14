@@ -7,20 +7,21 @@ class WPBakeryShortCode_the_boss_map extends WPBakeryShortCode {
 
     protected function content($atts, $content = null) {
         extract(shortcode_atts(array(
-            'title'               => '',
-            'subtitle'            => '',
-            'section_bg'          => '',
-            'the_boss_contacts'    => '',
-            'tb_class'            => '',                              
+
+            'tb_map_zoom'              => '',
+            'tb_map_latitude'          => '',
+            'tb_map_longitude'         => '',
+            'tb_map_title'             => '',
+            'tb_map_icon'              => '',   
+
         ), $atts));
         
-    	$the_boss_contacts = (array) vc_param_group_parse_atts( $the_boss_contacts );
-        $atts['content']  = $content;
         ob_start();
-        the_boss_map( $title, $subtitle, $section_bg, $the_boss_contacts , $tb_class );
+        the_boss_map( $tb_map_zoom, $tb_map_latitude, $tb_map_longitude, $tb_map_title ,$tb_map_icon , $tb_class );
         return ob_get_clean();	         
     }
 }
+
 
 vc_map( array(
     "base"                  => "the_boss_map",
@@ -30,8 +31,28 @@ vc_map( array(
     "params" => array(
         array(
             "type" => "textfield",
-            "heading"    => esc_html__("Section Title ", 'the-boss'),
-            "param_name" => "title",
+            "heading"    => esc_html__("Map Zoom ", 'the-boss'),
+            "param_name" => "tb_map_zoom",
+        ),
+        array(
+            "type" => "textfield",
+            "heading"    => esc_html__("Latitude ", 'the-boss'),
+            "param_name" => "tb_map_latitude",
+        ),
+        array(
+            "type" => "textfield",
+            "heading"    => esc_html__("Longitude ", 'the-boss'),
+            "param_name" => "tb_map_longitude",
+        ),
+        array(
+            "type" => "textfield",
+            "heading"    => esc_html__("Map Title: ", 'the-boss'),
+            "param_name" => "tb_map_title",
+        ),
+        array(
+            "type" => "attach_image",
+            "heading"    => esc_html__("Map Icon: ", 'the-boss'),
+            "param_name" => "tb_map_icon",
         ),
         array(
             "type"              => "textfield",

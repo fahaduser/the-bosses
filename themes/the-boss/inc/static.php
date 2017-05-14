@@ -8,9 +8,6 @@
  * @author LabArtisan
  */
 
-
-
-
 /**
  * Enqueue scripts and styles.
  */
@@ -42,11 +39,9 @@ function the_boss_scripts() {
     wp_enqueue_script( 'fancybox', THE_BOSS . '/js/jquery.fancybox.js', array( 'jquery' ), '2.1.5', true );
     wp_enqueue_script( 'swiper', THE_BOSS . '/js/swiper.min.js', array( 'jquery' ), '3.4.0', true );
     wp_enqueue_script( 'easypiechart', THE_BOSS . '/js/jquery.easypiechart.js', array( 'jquery' ), '2.1.1', true );
-    wp_enqueue_script( 'gmap-api', 'http://maps.google.com/maps/api/js?sensor=false' );
     wp_enqueue_script( 'gmap', THE_BOSS . '/js/gmap3.min.js', array( 'jquery' ), '6.0.0', true );
     wp_enqueue_script( 'flexslider', THE_BOSS . '/js/jquery.flexslider.js', array( 'jquery' ), '2.6.2', true );
     wp_enqueue_script( 'nstSlider', THE_BOSS . '/js/jquery.nstSlider.min.js', array( 'jquery' ), '1.0.13', true );
-    wp_enqueue_script( 'scrollSpeed', THE_BOSS . '/js/jQuery.scrollSpeed.js', array( 'jquery' ), '1.0.2', true );
     wp_enqueue_script( 'plugins', THE_BOSS . '/js/plugins.js', array( 'jquery' ), '1.0.0', true );
     wp_enqueue_script( 'main', THE_BOSS . '/js/main.js', array( 'jquery' ), '1.0.0', true );
 
@@ -56,3 +51,24 @@ function the_boss_scripts() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'the_boss_scripts', 90 );
+
+//Google Map
+
+if( ! function_exists( 'the_boss_gmap_init' ) ) :
+    function the_boss_gmap_init() {
+        $gmap_api = cs_get_option( 'tb_google_api' );
+        wp_enqueue_script( 'the-boss-map-custom', THE_BOSS . '/js/google-map.js', array( 'jquery' ), '1.0.0', true );
+        wp_enqueue_script( 'gmaps-api', 'http://maps.google.com/maps/api/js?key='.$gmap_api, null, null, true );
+    }
+endif;
+
+add_action( 'wp_enqueue_scripts', 'the_boss_gmap_init', 90 );
+
+if (function_exists('cs_get_option')):
+    $gmap_api = cs_get_option( 'tb_google_api' );
+    if(!empty($gmap_api)) :
+       add_action( 'wp_enqueue_scripts', 'the_boss_gmap_init', 90 );
+    endif;
+endif;
+
+

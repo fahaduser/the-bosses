@@ -517,6 +517,27 @@ $options[]      = array(
     ),        
 );
 
+// ----------------------------------------
+// Google Map Setting        -
+// ----------------------------------------
+$options[]        = array(
+    'name'        => 'et_contact_page_option',
+    'title'       => esc_html__('Google Map Settings', 'the-boss'),
+    'icon'        => 'fa fa-map-marker',
+    'fields'      => array(                                       
+        array(
+            'type'    => 'heading',
+            'content'   => esc_html__('Location Map Section', 'the-boss'),
+        ),
+        array(
+            'id'      => 'tb_google_api',
+            'type'    => 'text',
+            'title'   => esc_html__('Enter Google API Key', 'the-boss'),
+            'desc'    => esc_html__('Create your google map api from https://developers.google.com/maps/documentation/javascript/tutorial', 'the-boss'),
+            'sanitize' => false,
+        ),
+    ),        
+);
 
 //Footer Section
 $options[]        = array(

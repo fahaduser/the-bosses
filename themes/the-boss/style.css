@@ -169,3 +169,7 @@ body.logged-in.down #sohag.clone{
 .pricing-feature ul li i.cross-button {
 	color: #F2484B;
 }
+
+.latest-blog {
+	margin-bottom: 25px;
+}
