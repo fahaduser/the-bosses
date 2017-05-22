@@ -395,3 +395,20 @@ td.product-thumbnail div.cart-item-img img{
 .cart-checkout-box .cart-table tr {
 	border: none;
 }
+.woocommerce .tb-check {
+	background: #363636;
+	color: #fff;
+	color: #fff;
+	border: none;
+	padding: 9px 8px 9px 8px;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-transition: .25s;
+	transition: .25s;
+	border-radius: 3px;
+	outline: none;
+}
+.woocommerce .tb-check:hover {
+	text-decoration: none;
+	background:#62A0D1;
+}

@@ -166,6 +166,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 											<?php } ?>
 											<div class="cart-checkout">
 											<input type="submit"  name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>" />
+											<a href="<?php echo esc_url( wc_get_checkout_url() );?>" class="checkout-button tb-check wc-forward">
+												<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
+											</a>
+
 											</div>
 											<?php do_action( 'woocommerce_cart_actions' ); ?>
 
