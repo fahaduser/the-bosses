@@ -72,7 +72,7 @@ endif;
 		<!-- End Header Section -->
 		<!-- Breadcrumb Section -->
 		<?php if (!is_front_page() && $tb_page_header_switch == 1 && !is_404()) : ?>
-		<section class="breadcrumb-section section" <?php if($tb_page_header_bg) : ?> style="background: url(<?php echo esc_url($tb_page_header_bg ); ?>);" <?php endif; ?>>
+		<section class="breadcrumb-section section" <?php if($tb_page_header_bg) : ?> style="background: url(<?php echo esc_url($tb_page_header_bg ); ?>)" <?php endif; ?>>
 			<div class="container">
 				<div class="breadcrumb-area">
 					<?php if( !is_single() ) : ?>

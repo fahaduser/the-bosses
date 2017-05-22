@@ -159,7 +159,7 @@ ul {
     width: 50%;
     margin: 0 auto;
 }
-.button {
+.button, .form-submit {
     font-size: 14px;
     font-weight: bold;
     color: #fff;
@@ -2231,7 +2231,7 @@ Footer Section - Footer Bottom
     height: auto;
 	width: 100%;
 }
-.single-product:hover img {
+.single-product .product-image img:hover {
 	-webkit-transform: scale(1.09);
     -moz-transform: scale(1.09);
     -ms-transform: scale(1.09);
@@ -3498,7 +3498,7 @@ Footer Section - Footer Bottom
 .comment-form .button{
 	padding:0;
 }
-.submit-button {
+.submit-button, .woocommerce-Reviews #input-comment p.form-submit input.submit {
     border: none;
     background: transparent;
     padding: 15px 38px;

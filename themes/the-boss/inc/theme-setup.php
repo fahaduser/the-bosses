@@ -37,6 +37,15 @@ function the_boss_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'video', 'quote' ) );
 
 	/*
+	 * Enable Woocommerce
+	 *
+	 */
+
+	add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+
+	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/

@@ -137,6 +137,15 @@
 
 			jQuery('.text-div.fadeFromTop.overlay-switch').parents('.slider').addClass('slideroverlay');
 
+			// Woocommerce Remove button  class from add to cart text
+
+			$('.single-product .add-chart-icon a').removeClass('button');
+
+			// Woocommerce Add button  class from  at submit button
+
+			$('.woocommerce-Reviews #input-comment p.form-submit').addClass('button');
+			$('.woocommerce-Reviews #input-comment p.form-submit input[type="submit"]').removeClass('submit');
+			$('.woocommerce-Reviews #input-comment p.form-submit input[type="submit"]').addClass('submit-button');
 
 		});
 })(jQuery);	  

@@ -11,7 +11,7 @@
  *
  * @package The_Boss
  */
-$tb_blog_layout = '';
+$tb_blog_layout = 1;
 if(function_exists('cs_get_option')) :
 	$tb_blog_layout = cs_get_option('tb_blog_layout');
 endif;
@@ -19,6 +19,8 @@ get_header(); ?>
 
 <?php if( !empty($tb_blog_layout)) : ?>
 	<?php get_template_part( 'template-parts/blog/blog', $tb_blog_layout ); ?>
+<?php else : ?>
+	<?php get_template_part( 'template-parts/blog/blog', 1 ); ?>
 <?php endif; ?>
 		
 <?php get_footer();

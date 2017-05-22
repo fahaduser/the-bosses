@@ -76,7 +76,7 @@ endif;
 			</div>
 			
 			<div class="blog-share">
-				<h4><i class="flaticon-share"></i>Share :</h4>
+				<h4><i class="flaticon-share"></i><?php echo esc_html__( 'Share :', 'the-boss' ); ?></h4>
 				<?php the_boss_social_share(); ?>										
 			</div>
 		</div>
