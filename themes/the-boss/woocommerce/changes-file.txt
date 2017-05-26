@@ -19,7 +19,13 @@ single-product -> add-to-cart -> simple.php
 single-product -> related.php
 
 cart -> cart.php
+cart -> cross-sell.php
+cart -> cart-totals.php
 
 global -> quantity-input.php
 tabs -> decsription.php
 tabs -> tabs.php
+
+checkoput-> form-billing.php
+checkoput-> thankyou.php
+checkoput-> form-checkout.php

@@ -121,51 +121,9 @@ endif;
 					</div>
 					<?php endif; ?>
 
-					<?php if($tb_menu_mini_cart == 1) : ?>
+					<?php if($tb_menu_mini_cart == 1 && function_exists('is_woocommerce')) : ?>
 						<div class="chart-icon">
-							<i class="fa fa-shopping-cart" aria-hidden="true">
-								<span class="chart-number">2</span>
-							</i>
-							<ul class="cart-list">
-								<li>
-									<a href="shop_single_page.html"><img src="<?php echo get_template_directory_uri() ?>/images/menu_cart_01.jpg" alt="" /></a>
-									<div class="cart-selected-product">
-										<h3><a href="shop_single_page.html">Product Title</a></h3>
-										<span class="cart-select-quantity">Quantity : 1</span>
-										<span>$85</span>
-									</div>
-									<div class="cart-list-delate">
-										<i class="fa fa-times"></i>
-									</div>
-								</li>
-								<li>
-									<a href="shop_single_page.html"><img src="<?php echo get_template_directory_uri() ?>/images/menu_cart_02.jpg" alt="" /></a>
-									<div class="cart-selected-product">
-										<h3><a href="shop_single_page.html">Product Title</a></h3>
-										<span class="cart-select-quantity">Quantity : 1</span>
-										<span>$85</span>
-									</div>
-									<div class="cart-list-delate">
-										<i class="fa fa-times"></i>
-									</div>
-								</li>
-								<li>
-									<a href="shop_single_page.html"><img src="<?php echo get_template_directory_uri() ?>/images/menu_cart_03.jpg" alt="" /></a>
-									<div class="cart-selected-product">
-										<h3><a href="shop_single_page.html">Product Title</a></h3>
-										<span class="cart-select-quantity">Quantity : 1</span>
-										<span>$85</span>
-									</div>
-									<div class="cart-list-delate">
-										<i class="fa fa-times"></i>
-									</div>
-								</li>
-								<li class="cart-select-total">
-									<h3>Subtotal :</h3>
-									<span>$40.00</span>
-									<a href="shop_cart_page.html">Checkout</a>
-								</li>
-							</ul>
+							<?php the_boss_woocommerce_mini_cart(); ?>
 						</div>
 					<?php endif; ?>							
 				</div>

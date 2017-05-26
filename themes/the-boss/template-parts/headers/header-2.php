@@ -146,54 +146,11 @@ endif;
 									<i class="fa fa-times second_click" aria-hidden="true"></i>
 								</div>
 							<?php endif; ?>
-						<?php if($tb_menu_mini_cart == 1) : ?>
-							<div class="chart-icon">
-							    <p>$ 240.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true">
-									<span class="chart-number">2</span>
-								</i>
-								<ul class="cart-list">
-									<li>
-										<a href="#"><img src="<?php echo get_template_directory_uri() ; ?>/images/menu_cart_01.jpg" alt="" /></a>
-										<div class="cart-selected-product">
-											<h3><a href="#">Product Title</a></h3>
-											<span class="cart-select-quantity">Quantity : 1</span>
-											<span>$85</span>
-										</div>
-										<div class="cart-list-delate">
-											<i class="fa fa-times"></i>
-										</div>
-									</li>
-									<li>
-										<a href="#"><img src="<?php echo get_template_directory_uri() ; ?>/images/menu_cart_02.jpg" alt="" /></a>
-										<div class="cart-selected-product">
-											<h3><a href="#">Product Title</a></h3>
-											<span class="cart-select-quantity">Quantity : 1</span>
-											<span>$85</span>
-										</div>
-										<div class="cart-list-delate">
-											<i class="fa fa-times"></i>
-										</div>
-									</li>
-									<li>
-										<a href="#"><img src="<?php echo get_template_directory_uri() ; ?>/images/menu_cart_03.jpg" alt="" /></a>
-										<div class="cart-selected-product">
-											<h3><a href="#">Product Title</a></h3>
-											<span class="cart-select-quantity">Quantity : 1</span>
-											<span>$85</span>
-										</div>
-										<div class="cart-list-delate">
-											<i class="fa fa-times"></i>
-										</div>
-									</li>
-									<li class="cart-select-total">
-										<h3>Subtotal :</h3>
-										<span>$40.00</span>
-										<a href="shop_cart_page.html">Checkout</a>
-									</li>
-								</ul>
-							</div>
-							<?php endif; ?>							
+							<?php if($tb_menu_mini_cart == 1 && function_exists('is_woocommerce')) : ?>
+								<div class="chart-icon">
+									<?php the_boss_woocommerce_mini_cart(); ?>
+								</div>
+							<?php endif; ?>									
 						</div>
 						<div class="search-box-text">
 							<form action="<?php echo esc_url( home_url() ); ?>">

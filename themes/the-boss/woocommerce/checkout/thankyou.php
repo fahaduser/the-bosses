@@ -20,7 +20,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-
+<div class="checkout-breadcrumb">
+    <h3>
+        <span><?php esc_html_e('Shopping Cart','the-boss') ?></span>   
+        <i class="fa fa-angle-right" aria-hidden="true"></i>    
+        <span><?php esc_html_e('Checkout details','the-boss') ?></span>  
+        <i class="fa fa-angle-right" aria-hidden="true"></i> 
+        <span class="active"><?php esc_html_e('Order Complete','the-boss') ?></span>
+    </h3>
+</div>
 <div class="woocommerce-order">
 
 	<?php if ( $order ) : ?>

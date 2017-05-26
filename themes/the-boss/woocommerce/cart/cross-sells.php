@@ -22,9 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $cross_sells ) : ?>
 
-	<div class="cross-sells">
+	<div class="col-sm-6">
 
-		<h2><?php _e( 'You may be interested in&hellip;', 'woocommerce' ) ?></h2>
+		<h3><?php _e( 'You may be interested in&hellip;', 'woocommerce' ) ?></h3>
 
 		<?php woocommerce_product_loop_start(); ?>
 
