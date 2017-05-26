@@ -46,6 +46,37 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
 .header-top .logo a {
 	color: #337ab7;
 	font-size: 25px;
@@ -605,4 +636,74 @@ color: #FFF  ;
 }
 .widget_tb_recent_products ul li .small-thumbnail img{
 	width: 100%;
+}
+
+.woocommerce.widget_product_categories .product-categories li{
+	margin: 5px 0;
+}
+
+.woocommerce.widget_product_categories .product-categories .children{
+	margin-left: 20px;
+}
+
+.woocommerce.widget_product_categories .dropdown_product_cat{
+	padding: 9px 23px;
+}
+
+.woocommerce.widget_product_categories .product-categories a {
+color: #707070;
+font-size: 16px;
+-webkit-transition: .4s;
+transition: .4s;
+}
+.woocommerce.widget_product_categories .product-categories span.count {
+	float: right;
+}
+
+.single-sidebar.woocommerce.widget_product_search .woocommerce-product-search{
+position: relative;
+}
+.single-sidebar.woocommerce.widget_product_search input[type="search"] {
+	border: 1px solid #F8F8F8;
+	padding: 12px 20px;
+	width: 100%;
+	color: #656565;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+}
+.single-sidebar.woocommerce.widget_product_search input[type="submit"] {
+	padding: 5px;
+	position: absolute;
+	top: 6px;
+	right: 7px;
+	background: transparent;
+	border: navajowhite;
+}
+.single-sidebar.woocommerce.widget_products .product_list_widget li img ,
+.single-sidebar.woocommerce.widget_top_rated_products .product_list_widget li img 
+{
+width: 70px !important; 
+} 
+.single-sidebar.woocommerce.widget_products .product_list_widget a,
+.single-sidebar.woocommerce.widget_top_rated_products .product_list_widget a
+ {
+	color: #333;
+	font-size: 20px;
+}
+.single-sidebar.woocommerce.widget_products .product_list_widget a:hover,
+.single-sidebar.woocommerce.widget_top_rated_products .product_list_widget a:hover 
+ {
+	color: #62A0D1;
+	text-decoration: none;
+}
+.single-sidebar.woocommerce.widget_top_rated_products .product_list_widget div.star-rating{
+	color: #62A0D1;
+}
+.widget_tb_recent_products .latest-product h3,
+.widget_tb_recent_products .latest-product h3 span
+{
+	font-size: 14px;
+}
+.shoping-section-home .woo-product-thumb img{
+	width: 100% !important;
 }

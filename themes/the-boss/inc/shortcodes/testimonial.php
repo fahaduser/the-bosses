@@ -6,9 +6,9 @@ function the_boss_testimonials( $title, $subtitle, $limit, $order ,$orderby , $s
 			<div class="container">
 				<div class="row">
 					<div class="section-heading">
-				<h2 class="section-title"><?php echo wp_kses_post( $title ); ?></h2>
-				<p class="section-content"><?php echo wp_kses_post( $subtitle ); ?></p>
-			</div>
+						<h2 class="section-title"><?php echo wp_kses_post( $title ); ?></h2>
+						<p class="section-content"><?php echo wp_kses_post( $subtitle ); ?></p>
+					</div>
 				</div>
 				<div class="row">
 					<div class="testimonial-parents" id="testmimonial-big">
