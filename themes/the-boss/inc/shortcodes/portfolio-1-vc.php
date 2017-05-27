@@ -18,8 +18,6 @@ class WPBakeryShortCode_the_boss_portfolio_1 extends WPBakeryShortCode {
             'tb_class'      => '',
         ), $atts));
         
-    	$the_boss_feature = (array) vc_param_group_parse_atts( $the_boss_feature );
-        $atts['content']  = $content;
         ob_start();
         the_boss_portfolio_1($title, $subtitle, $limit, $order ,$orderby , $section_bg, $btn_text,$btn_url ,$tb_class);
         return ob_get_clean();	         

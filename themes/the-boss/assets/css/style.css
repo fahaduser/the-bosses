@@ -1280,7 +1280,6 @@ body.down #sohag.clone  img{
 09. Twitter Section
 ==================================*/
 .twitter-section {
-    background-image: url(../../images/home-one-overlay-two.jpg);
 	text-align:center;
     background-repeat: no-repeat;
 	overflow: hidden;
@@ -2107,7 +2106,6 @@ Footer Section - Footer Bottom
 17. Video Background Section
 ==================================*/
 #video-paralux-section {
-    background-image: url(../../images/video-area-bg.jpg);
     background-repeat: no-repeat;	
 	text-align:center;
 	overflow: hidden;

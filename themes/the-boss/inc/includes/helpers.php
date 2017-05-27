@@ -73,7 +73,7 @@ function the_boss_numeric_pagination() {
 
 	/**	Next Post Link */
 	if ( get_next_posts_link() )
-		printf( '<li>%s</li>' . "\n", get_next_posts_link('»') );
+		printf( '<li>%s</li>' . "\n", get_next_posts_link('&#187;') );
 
 	echo '</ul></div></div>'. "\n";
 

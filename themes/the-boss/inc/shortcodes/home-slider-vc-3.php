@@ -12,8 +12,6 @@ class WPBakeryShortCode_home_slier_3 extends WPBakeryShortCode {
             'orderby'          => '',                              
         ), $atts));
         
-        $event_info = (array) vc_param_group_parse_atts( $event_info );
-        $atts['content'] = $content;
         ob_start();
         tb_home_slider_3($limit, $order, $orderby);
         return ob_get_clean();           
